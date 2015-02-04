@@ -1,0 +1,174 @@
+/* Home CSS File */
+#wrapper {
+    padding-left: 0;
+}
+/* START CSS FOR LOGIN SECTION */
+#login_dropdown>a, #login_dropdown>a:link, #login_dropdown>a:visited, #login_dropdown>a:active {
+	border-radius: 5px;
+	padding: 15px 30px;
+	box-shadow: inset 2px 2px rgba(255,255,255,0.3);
+	color: #fff;
+}
+#login_dropdown>a:hover {
+	background: #5cb85c;
+}
+#login_dropdown>div.dropdown-menu {
+	padding: 15px;
+}
+#app_login_form a {
+	color: #fff;
+	cursor: pointer;
+	text-decoration: none;
+	border-bottom: 1px dotted #fff;
+	font-size: 12px;
+}
+#login_dropdown>div.dropdown-menu input[type=submit], 
+#login_dropdown>div.dropdown-menu input[type=button] {
+	font-weight: bold;
+}
+#login_dropdown>div.dropdown-menu input[type=text], 
+#login_dropdown>div.dropdown-menu input[type=password] {
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3) inset;
+	padding-right: 30px;
+}
+#login_dropdown>div.dropdown-menu .form-group{
+	position: relative;
+}
+#login_dropdown>div.dropdown-menu .form-group>b.fa{
+	position: absolute;
+	top: 8px;
+	right: 10px;
+	font-size: 20px;
+	color: #5cb85c;
+}
+#login_dropdown>.dropdown-menu {
+	border-top: 0;
+}
+#login_dropdown.open>a {
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+.login_highlight {
+	background: #5cb85c !important;
+}
+#app_login_form {
+	width: 250px;
+}
+#app_create_account_form {
+	width: 500px;
+}
+#app_create_account_form h2 {
+	font-size: 16px;
+	margin: 15px 0 5px 10px;
+	font-weight: bold;
+	color: #fff;
+}
+#createAcct_submit {
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+#app_create_account_form input[type=text], #app_create_account_form input[type=password] {
+	margin-bottom: 10px;
+}
+#login_submit {
+	margin-top: 50px;
+}
+#activeUser_dropdown>a.dropdown-toggle {
+	display: inline-block;
+}
+#activeUser_dropdown>img.profile-pic {
+	width: 48px;
+	height: 48px;
+	margin-left: 50px;
+}
+@media only screen 
+and (max-width : 767px) {
+/* Styles */
+	body {
+		margin-top: 50px;
+	}
+	#login_dropdown>.dropdown-menu {
+		width: 100%;
+		position: fixed;
+	}
+	#app_login_form, #app_create_account_form {
+		width: 100%;
+	}
+	ul.navbar-right {
+		display: none;
+	}
+	#new_order_cancel, #new_order_submit {
+		margin-bottom: 10px;
+	}
+}
+@media only screen 
+and (min-width : 767px) {
+	#page-wrapper {
+		margin: 0 auto;
+		width: 960px;
+	}
+}
+/* END CSS FOR LOGIN SECTION */
+.greenBtn {
+	background: #5cb85c;
+	box-shadow: inset 2px 2px rgba(255,255,255,0.3);
+	color: #fff;
+	cursor: pointer;
+}
+.greenBtn:hover {
+	background: #53A853;
+}
+#order_panel_1 .timeSelection {
+	margin-bottom: 20px;
+}
+#order_panel_1 .timeSelection.last {
+	margin-bottom: 0px;
+}
+#new_order_info {
+	resize: none;
+	margin-bottom: 10px;
+	height: 200px;
+}
+.tallBtn {
+	height: 50px;
+}
+#new_order_estimated_cost {
+	margin-bottom: 10px;
+}
+#new_order_form p.lead {
+	margin: 10px 0;
+}
+#new_order_go_back {
+	margin-top: 10px;
+}
+#createAcct_cancel, #createAcct_cancel:link, #createAcct_cancel:active, #createAcct_cancel:visited, #createAcct_cancel:hover {
+	text-decoration: none;
+	text-align: center;
+	font-weight: bold;
+	cursor: pointer;
+	color: #555;
+}
+#login_dropdown .alert {
+	padding: 5px 15px;
+	text-align: center;
+}
+#login_dropdown>div.dropdown-menu .form-group>b.fa-lock {
+	right: 12px;
+}
+.fa.fa-greenBtn {
+	background-color: #5cb85c;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+	margin: 5px 0 5px 5px;
+	float: right;
+	cursor: pointer;
+	border-radius: 4px;
+	box-shadow: inset 2px 2px rgba(255,255,255,0.3);
+}
+.fa.fa-greenBtn:hover {
+	background: #53A853;
+}

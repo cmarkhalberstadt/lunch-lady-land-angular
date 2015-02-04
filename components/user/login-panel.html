@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin - Bootstrap Admin Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	<!-- Page CSS -->
+	<link href="css/home.css" rel="stylesheet" type="text/css">
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <div id="wrapper">
+        
+		<!-- Header -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        	<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">Lunch Lady Land</a>
+			</div>
+			
+			<!-- Top Menu Items -->
+			<ul class="nav navbar-right top-nav">
+				<li id="login_dropdown" class="dropdown" style="display: block;">
+					<a href="#" class="dropdown-toggle login_highlight" data-toggle="dropdown">Login <b class="caret"></b></a>
+					<div class="dropdown-menu login_highlight">
+						<!-- START : Login Form -->
+						<form id="app_login_form" name="appLoginForm">
+							<div class="form-group">
+								<input id="login_user" name="username" class="form-control" type="text" value="" placeholder="User Name" required />
+								<b class="fa fa-user"></b>
+								<span class="help-block" style="display: none;">Username is required</span>
+							</div>
+							<div class="form-group">
+								<input id="login_pw" name="password" class="form-control" type="password" value="" placeholder="Password" required />
+								<b class="fa fa-lock"></b>
+								<span class="help-block" style="display: none;">Password is required</span>
+								<a class="">Forgot Password?</a>
+							</div>
+							<input id="login_submit" class="form-control" type="submit" value="Login" />
+							<div class="input-group">
+								<a id="create_new_acct_link">Create New Account</a>
+							</div>
+						</form>
+						<!-- END : Login Form -->
+					</div>
+				</li>
+			</ul>
+			<ul class="nav navbar-right top-nav">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Orders <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="#">My Orders</a>
+						</li>
+						<li>
+							<a href="#">By Location</a>
+						</li>
+						<li>
+							<a href="#">View by Order Time</a>
+						</li>
+						<li>
+							<a href="#">By Restaurant</a>
+						</li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Restaurants <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Restaurant 1</a></li>
+						<li><a href="#">Restaurant 2</a></li>
+						<li><a href="#">Restaurant 3</a></li>
+						<li><a href="#">Restaurant 4</a></li>
+						<li><a href="#">Restaurant 5</a></li>
+						<li><a href="#">Restaurant 6</a></li>
+						<li><a href="#">Restaurant 7</a></li>
+						<li><a href="#">Restaurant 8</a></li>
+					</ul>
+				</li>
+				<li id="activeUser_dropdown">
+					<!-- IF USER HAS PROFILE IMAGE : ELSE USE STOCK IMAGE -->
+					<img class="profile-pic" src="images/anonymous.jpg" />
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Some User <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-fw fa-coffee"></i> My Order History</a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+        </nav>
+
+		<!-- Page Wrapper -->
+        <div id="page-wrapper">			
+			<h1>Click login button in header to view login panel.</h1>
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
