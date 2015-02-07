@@ -8,6 +8,13 @@ http.createServer(function(request, response) {
  
   var uri = url.parse(request.url).pathname, filename = path.join(process.cwd(), uri);
   
+  var MIME_TYPES = {
+		  'DEFAULT' : 'text/plain',
+		  '.html' 	: 'text/html',
+		  '.css' 	: 'text/css',
+		  '.js'		: 'text/javascript'
+  }
+  
   path.exists(filename, function(exists) {
     if(!exists) {
       response.writeHead(404, {"Content-Type": "text/plain"});
@@ -28,7 +35,13 @@ http.createServer(function(request, response) {
         return;
       }
  
-      response.writeHead(200);
+      var extension = filename.substring(filename.lastIndexOf("."), filename.length);
+      var mimeType = MIME_TYPES[extension];
+      if (typeof mimeType === "undefined") {
+    	  mimeType = MIME_TYPES['DEFAULT'];
+      }
+      var properties = { 'Content-Type': mimeType };      
+      response.writeHead(200, properties);
       response.write(file, "binary");
       response.end();
       console.log("200 \t"+url.parse(request.url).pathname);
