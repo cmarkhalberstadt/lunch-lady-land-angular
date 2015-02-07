@@ -1,1 +1,1 @@
-var lunchladyApp = angular.module('lunchladyApp', []);
+var lunchladyApp = angular.module('lunchladyApp', ['ui.bootstrap']);
