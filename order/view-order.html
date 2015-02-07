@@ -18,7 +18,7 @@
     <link href="/css/sb-admin.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 	<!-- Page CSS -->
 	<link href="/css/home.css" rel="stylesheet" type="text/css">
@@ -182,7 +182,7 @@
 			</ul>
         </nav>
 
-        <div id="page-wrapper">
+        <div id="page-wrapper" ng-app="lunchladyApp">
         	<div class="container-fluid">
         		<h1>View Order</h1>
             <dl class="dl-horizontal">
@@ -196,7 +196,7 @@
               <dd>12:30PM</dd>
             </dl>
 
-            <table class="table table-striped">
+            <table class="table table-striped" ng-controller="OrderCtrl">
               <thead>
                 <tr>
                   <th>
@@ -214,44 +214,10 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>
-                    Adam
-                  </td>
-                  <td>
-                    6in Meatball on White, Lays BBQ, Medium Coke
-                  </td>
-                  <td>
-                    $8
-                  </td>
-                  <td class="text-center">
-                    <i class="glyphicon glyphicon-remove"></i>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    John
-                  </td>
-                  <td>
-                    12in Turkey on Wheat, Large Water
-                  </td>
-                  <td>
-                    $5
-                  </td>
-                  <td class="text-center">
-                    <i class="glyphicon glyphicon-remove"></i>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    Stacy
-                  </td>
-                  <td>
-                    6in Turkey on Wheat, Small Sprite
-                  </td>
-                  <td>
-                    $4
-                  </td>
+                <tr ng-repeat="order in orders">
+                  <td>{{ getUserName(order) }}</td>
+                  <td>{{ order.itemsToOrder }}</td>
+                  <td>${{ order.estimatedCost }}</td>
                   <td class="text-center">
                     <i class="glyphicon glyphicon-remove"></i>
                   </td>
@@ -282,10 +248,15 @@
     <!-- /#wrapper -->
 
     <!-- jQuery Version 1.11.0 -->
-    <script src="js/jquery-1.11.0.js"></script>
-
+    <script src="/js/jquery-1.11.0.js"></script>
+    
+    <script src="/js/angular/framework/1.3.2/angular.js"></script>
+    <script src="/app.js"></script>
+    <script src="/order/order-controller.js"></script>
+    <script src="/user/user-service.js"></script>
+	
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
 </body>
 
 </html>
