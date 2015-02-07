@@ -1,30 +1,65 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Lunch Lady Temporary Index</title>
-<style>
-  a {
-  	display: block;
-  }
-</style>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>Lunch Lady Land</title>
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/css/sb-admin.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	<!-- Page CSS -->
+	<link href="/css/home.css" rel="stylesheet" type="text/css">
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
-<body>
-	<h1>Lunchlady Views</h1>
-	<p>This page will serve as a simple UI to display links to the views created for the lunchlady app.</p>
-	<h2>Dashboard</h2>
-	<a href="/dashboard/dashboard.html">Dashboard View</a>
-	<h2>Login Panels</h2>
-	<a href="/user/login-panel.html">Login Panel View</a>
-    <a href="/user/new-user.html">New User View</a>
-	<h2>Orders CRUD</h2>
-    <a href="/order/new-order.html">New Order View</a>
-    <a href="/order/view-order.html">View Order View</a>
-	<h2>Offices CRUD</h2>
-	<a href="/office/list-offices.html">List Offices View</a>
-	<a href="/office/view-office.html">View Office View</a>
-	<a href="/office/edit-office.html">Edit Office View</a>
-	<h2>Restaurants CRUD</h2>
-	<a href="/restaurant/list-restaurants.html">List Restaurant View</a>
-	<a href="/restaurant/view-restaurant.html">View Restaurant View</a>
-	<a href="/restaurant/edit-restaurant.html">Edit Restaurant View</a>
+<body ng-app="lunchladyApp">
+	
+	<div id="header" ng-include="'/header/header.html'"></div>
+	
+	<div id="page-wrapper">
+		<!-- TODO - Build Application Flow -->
+        <div ng-include="'/dashboard/dashboard.html'"></div>
+	</div>
+	
+	<!-- jQuery Version 1.11.0 -->
+    <script src="/js/jquery-1.11.0.js"></script>
+    
+    <!-- AngularJS Framework -->
+    <script src="/js/angular/framework/1.3.2/angular.js"></script>
+    <script src="/js/angular/framework/1.3.2/angular-route.js"></script>
+    <script src="/app.js"></script>
+    
+    <!-- AngularJS Controllers -->
+    <script src="/order/order-controller.js"></script>
+    <script src="/header/header-controller.js"></script>
+    <script src="/header/login/login-panel-controller.js"></script>
+    <script src="/header/enroll/enroll-controller.js"></script>
+    <script src="/header/user-menu/user-menu-controller.js"></script>
+    <script src="/dashboard/dashboard-controller.js"></script>
+    
+    <!-- AngularJS Services -->
+    <script src="/user/user-service.js"></script>
+	
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
+    
+    <!-- AngularJS Bootstrap Directives -->
+    <script src="/js/ui-bootstrap-tpls-0.12.0.min.js"></script>
 </body>
 </html>
