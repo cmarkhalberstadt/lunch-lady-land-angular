@@ -60,12 +60,20 @@ lunchladyApp.controller('OrderCtrl', function($window, $scope, $modal, $log, use
 	$scope.goBack = function() {
 		$window.history.back();
 	};
+	
+	$scope.submitOrder = function() {
+		console.log("Implement me.");
+	}
+	
+	$scope.closeOrder = function() {
+		console.log("Implement me.");
+	}
 });
 
 // The Delete Order Modal Controller
 // TODO - Discuss if this is the best location for this controller. Not sure how typical Angular apps
 // want to organize something like this as it makes sense to include here in the primary controller.
-lunchladyApp.controller('deleteOrderModalCtrl', function($scope, $log, $modalInstance, userService, orderToDelete) {
+lunchladyApp.controller('deleteOrderModalCtrl', function($scope, $modalInstance, userService, orderToDelete) {
 	
 	$scope.orderToDelete = orderToDelete;
 	
