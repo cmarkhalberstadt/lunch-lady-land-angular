@@ -1,4 +1,4 @@
-<form id="app_login_form" name="appLoginForm">
+<form id="app_login_form" name="appLoginForm" ng-controller="loginCtrl" ng-submit="login()">
 	<div class="form-group">
 		<input id="login_user" name="username" class="form-control" type="text" value="" placeholder="User Name" required />
 		<b class="fa fa-user"></b>
@@ -12,6 +12,6 @@
 	</div>
 	<input id="login_submit" class="form-control" type="submit" value="Login" />
 	<div class="input-group">
-		<a id="create_new_acct_link">Create New Account</a>
+		<a id="create_new_acct_link" ng-click="$parent.isRequestingEnrollment = true">Create New Account</a>
 	</div>
 </form>

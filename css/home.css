@@ -1,4 +1,5 @@
 /* Home CSS File */
+a { cursor: pointer; }
 #wrapper {
     padding-left: 0;
 }
@@ -172,3 +173,7 @@ and (min-width : 767px) {
 .fa.fa-greenBtn:hover {
 	background: #53A853;
 }
+.glyphicon-remove {
+	cursor: pointer;
+}
+.order .close { float: none; }

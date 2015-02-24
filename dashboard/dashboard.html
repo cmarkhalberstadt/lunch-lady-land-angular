@@ -1,23 +1,24 @@
-﻿<div class="container-fluid" ng-controller="dashboardCtrl">
+<div class="container-fluid" ng-controller="dashboardCtrl">
 	<div class="panel panel-default">
 		<div class="panel-heading">
 			<h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i> Open Orders</h3>
 		</div>
 		<div class="panel-body">
 	        <div class="list-group">
-				<a href="#" class="list-group-item">
+	        	<!-- Adding #/viewOrder for demo. Needs to be rewritten when dashboard is rewritten with AngularJS -->
+				<a href="#/viewOrder" class="list-group-item">
 					<span class="badge">12:00PM</span>
 	                <span class="label label-primary">Kearney South</span> Quiznos - 3 Participants
 				</a>
-	            <a href="#" class="list-group-item">
+	            <a href="#/viewOrder" class="list-group-item">
 	                <span class="badge">12:30PM</span>
 	                <span class="label label-primary">Kearney South</span> Jimmy Johns - 5 Participants
 	            </a>
-				<a href="#" class="list-group-item">
+				<a href="#/viewOrder" class="list-group-item">
 	                <span class="badge">12:45PM</span>
 	                <span class="label label-primary">Kearney North</span> Imperial Sun - 1 Participant
 				</a>
-	            <a href="#" class="list-group-item">
+	            <a href="#/viewOrder" class="list-group-item">
 	                <span class="badge">1:00PM</span>
 	                <span class="label label-primary">Kearney South</span> Jimmy Johns - 2 Participants
 				</a>
@@ -30,11 +31,11 @@
 		</div>
       	<div class="panel-body">
 			<div class="list-group">
-            	<a href="#" class="list-group-item">
+            	<a href="#/viewOrder" class="list-group-item">
                 	<span class="badge">ETA 15 Minutes</span>
                 	<span class="label label-primary">Kearney South</span> Dominos - 11:30AM - 3 Participants
              	</a>
-             	<a href="#" class="list-group-item">
+             	<a href="#/viewOrder" class="list-group-item">
                 	<span class="badge">ETA 30 Minutes</span>
                  	<span class="label label-primary">Kearney South</span> Subway - 11:45AM - 2 Participants
              	</a>

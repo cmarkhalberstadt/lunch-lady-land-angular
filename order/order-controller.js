@@ -1,4 +1,4 @@
-lunchladyApp.controller('OrderCtrl', function($scope, $modal, $log, userService) {
+lunchladyApp.controller('OrderCtrl', function($window, $scope, $modal, $log, userService) {
 	
 	// TODO - Replace with live data.
 	$scope.orders = [
@@ -55,6 +55,10 @@ lunchladyApp.controller('OrderCtrl', function($scope, $modal, $log, userService)
 	    		}
 	    	}
 	    });
+	};
+	
+	$scope.goBack = function() {
+		$window.history.back();
 	};
 });
 

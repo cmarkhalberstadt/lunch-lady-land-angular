@@ -34,7 +34,7 @@
 	
 	<div id="page-wrapper">
 		<!-- TODO - Build Application Flow -->
-        <div ng-include="'/dashboard/dashboard.html'"></div>
+        <div ng-view></div>
 	</div>
 	
 	<!-- jQuery Version 1.11.0 -->
@@ -46,6 +46,7 @@
     <script src="/app.js"></script>
     
     <!-- AngularJS Controllers -->
+    <script src="/order/new-order-controller.js"></script>
     <script src="/order/order-controller.js"></script>
     <script src="/header/header-controller.js"></script>
     <script src="/header/login/login-panel-controller.js"></script>
